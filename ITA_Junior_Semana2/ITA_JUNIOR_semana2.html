@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url(./Logo.jpeg) no-repeat center center/cover;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #container-home {
+            
+            display: flex;
+            flex-wrap: wrap;
+           
+            justify-content: space-evenly;
+      
+            height: 150px;
+            
+            align-items: baseline;
+       
+            align-content: space-between;
+        
+        }
+
+        .Home {
+            order: 1;
+        }
+
+        .Sobre-nos {
+            
+            align-self: center;
+        
+            order: 2
+        }
+
+        .Logins {
+            order: 3;
+        }
+
+        .item {
+            
+            border: #ccc solid 1px;
+            text-align: center;
+            padding: 1rem;
+            margin: 0.5rem;
+            flex-basis: 200px;
+            flex-grow: 1;
+            color: #fff;
+        }
+
+        .item button:hover {
+            background: #333;
+            color: #fff
+        }
+
+        #container {
+            margin: 30px auto;
+            max-width: 500px;
+            padding: 20px;
+        }
+
+        .form-wrap {
+            padding: 15px 25px;
+            background-color: aquamarine;
+            color: #333;
+        }
+
+        .form-wrap .form-group {
+            margin-top: 15px;
+        }
+
+
+        .form-wrap p,
+        .form-wrap h1 {
+            text-align: center;
+
+        }
+
+        .form-wrap .form-group a {
+            color: red;
+            background-color: yellow;
+        }
+
+        .form-wrap .form-group label {
+            display: block;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .form-wrap .form-group input {
+            padding: 20px;
+            width: 100%;
+            border: blue 1px solid;
+            border-radius: 5px;
+
+        }
+
+        .form-wrap button {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            background:#fff;
+            color: #333;
+            cursor: pointer;
+            font-size: 26px;
+        }
+
+        .form-wrap button:hover {
+            background: #333;
+            color: #fff
+        }
+
+        .form-wrap .bottom-text {
+            font-size: 13px;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 10px;
+            color: #fff;
+        }
+
+        footer a {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container-home">
+        <div class="item Home">
+            <button type="button"><h1>Home</h1></button>
+        </div>
+        <div  class="item Sobre-nos">
+            <button type="button"><h1>Sobre nos</h1></button>
+        </div>
+        <div class="item Logins">
+            <button type="button"><h1>Logins</h1></button>
+        </div>
+    </div>
+    <div id="container">
+        <div class="form-wrap">
+            <h1>WELCOME BACK</h1>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="enter your email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="text" placeholder="enter your Password" id="Password">
+                </div>
+                <div>
+                    <button type="submit">Login</button>
+                </div>
+                <div>
+                    <p><a href="#">Forgotten password ?</a></p>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <p>New Here? <a href="#">Create a Account</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
